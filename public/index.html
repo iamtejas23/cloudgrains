@@ -1,43 +1,376 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/Organization">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    
+    <!-- Basic Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#38bdf8" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>CloudGrains</title>
+    <!-- Google verification -->
+    <meta name="google-site-verification" content="EL7LhBf-fv5zMHBMOLp38OoUIS8XBA1Atx-Iv8m4waA" />
+    
+    <!-- Primary Meta Tags -->
+    <title>CloudGrains - Cloud Infrastructure Solutions, DevOps Services & Web Development | #1 Cloud Provider</title>
+    <meta name="title" content="CloudGrains - Cloud Infrastructure Solutions, DevOps Services & Web Development | #1 Cloud Provider" />
+    <meta name="description" content="CloudGrains offers premium cloud infrastructure solutions, DevOps automation, web development, and mobile app development. Expert AWS, Azure, GCP services with 99.9% uptime guarantee. Transform your business with cutting-edge cloud technology." />
+    <meta name="keywords" content="cloud infrastructure, devops services, web development, mobile app development, AWS services, Azure cloud, Google Cloud Platform, cloud migration, CI/CD pipelines, kubernetes, docker, terraform, cloud consulting, scalable solutions, cloud security, database management, API development, react development, progressive web apps, cloud automation, infrastructure as code, cloud optimization, serverless architecture, microservices, cloud monitoring, disaster recovery, load balancing, auto scaling, cloud storage, content delivery network, cloud backup, hybrid cloud, multi-cloud strategy, cloud cost optimization" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cloudgrains.com/" />
+    <meta property="og:title" content="CloudGrains - Premier Cloud Infrastructure & DevOps Solutions" />
+    <meta property="og:description" content="Transform your business with CloudGrains' enterprise-grade cloud infrastructure, DevOps automation, and web development services. 10+ satisfied clients, 100+ projects completed, 99.9% uptime guarantee." />
+    <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="CloudGrains" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://cloudgrains.com/" />
+    <meta property="twitter:title" content="CloudGrains - Premier Cloud Infrastructure & DevOps Solutions" />
+    <meta property="twitter:description" content="Transform your business with CloudGrains' enterprise-grade cloud infrastructure, DevOps automation, and web development services. 10+ satisfied clients, 100+ projects completed." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/logo512.png" />
+    <meta name="twitter:creator" content="@cloudgrains" />
+    <meta name="twitter:site" content="@cloudgrains" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="author" content="CloudGrains" />
+    <meta name="publisher" content="CloudGrains" />
+    <meta name="copyright" content="CloudGrains" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="geo.region" content="US" />
+    <meta name="geo.placename" content="United States" />
+    <meta name="application-name" content="CloudGrains" />
+    
+    <!-- Favicon and Apple Touch Icons -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon.ico" />
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preconnect to External Domains for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://cloudgrains.com/" />
+    
+    <!-- Structured Data (JSON-LD) for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CloudGrains",
+      "url": "https://cloudgrains.com",
+      "logo": "https://cloudgrains.com/logo512.png",
+      "description": "CloudGrains offers premium cloud infrastructure solutions, DevOps automation, web development, and mobile app development services with 99.9% uptime guarantee.",
+      "founder": {
+        "@type": "Person",
+        "name": "CloudGrains Team"
+      },
+      "foundingDate": "2023",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://twitter.com/cloudgrains",
+        "https://linkedin.com/company/cloudgrains",
+        "https://github.com/cloudgrains"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cloud Infrastructure Solutions",
+          "description": "Comprehensive cloud infrastructure, DevOps, and web development services"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "10",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "CloudGrains Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cloud Infrastructure",
+              "description": "Scalable and secure cloud solutions on AWS, Azure, and Google Cloud Platform"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "DevOps & CI/CD",
+              "description": "Automated deployment pipelines and infrastructure as code"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web Applications",
+              "description": "Modern, responsive web applications built with cutting-edge technologies"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mobile Development",
+              "description": "Native and cross-platform mobile applications for iOS and Android"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- Website Performance and Security Headers -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- Additional Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CloudGrains",
+      "url": "https://cloudgrains.com",
+      "description": "Premier cloud infrastructure solutions and DevOps services",
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cloudgrains.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CloudGrains",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cloudgrains.com/logo512.png"
+        }
+      }
+    }
+    </script>
+    
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "CloudGrains",
+      "image": "https://cloudgrains.com/logo512.png",
+      "description": "Professional cloud infrastructure, DevOps automation, and web development services",
+      "serviceType": "Cloud Infrastructure Solutions",
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cloud Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AWS Cloud Solutions"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Azure Cloud Migration"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Google Cloud Platform Services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Kubernetes Container Orchestration"
+            }
+          }
+        ]
+      }
+    }
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!-- Skip Links for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Fallback content for users without JavaScript -->
+    <noscript>
+      <div style="padding: 20px; text-align: center; background: #f8f9fa;">
+        <h1>CloudGrains - Cloud Infrastructure Solutions</h1>
+        <p>CloudGrains provides premium cloud infrastructure, DevOps automation, and web development services. Please enable JavaScript to experience our full interactive website.</p>
+        <p><strong>Services:</strong> Cloud Infrastructure, DevOps & CI/CD, Web Applications, Mobile Development, Database Solutions, Security & Compliance</p>
+        <p><strong>Technologies:</strong> AWS, Azure, Google Cloud, Kubernetes, Docker, Terraform, React, Node.js, Python</p>
+        <p><strong>Contact:</strong> Visit our website with JavaScript enabled to get in touch with our expert team.</p>
+      </div>
+    </noscript>
+    
+    <!-- Hidden content for SEO crawlers -->
+    <div style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+      <h1>CloudGrains - Leading Cloud Infrastructure Provider</h1>
+      <h2>Enterprise Cloud Solutions & DevOps Automation Services</h2>
+      <p>CloudGrains is the premier provider of cloud infrastructure solutions, offering comprehensive services including AWS cloud migration, Azure deployments, Google Cloud Platform management, Kubernetes orchestration, Docker containerization, and CI/CD pipeline automation. Our expert team delivers scalable, secure, and cost-effective cloud solutions for businesses of all sizes.</p>
+      
+      <h3>Our Core Services</h3>
+      <ul>
+        <li>Cloud Infrastructure Design and Implementation</li>
+        <li>DevOps and Continuous Integration/Continuous Deployment (CI/CD)</li>
+        <li>Web Application Development with React and Next.js</li>
+        <li>Mobile Application Development for iOS and Android</li>
+        <li>Database Design, Optimization, and Management</li>
+        <li>Cloud Security and Compliance Solutions</li>
+        <li>Infrastructure as Code with Terraform</li>
+        <li>Container Orchestration with Kubernetes</li>
+        <li>Serverless Architecture Implementation</li>
+        <li>Cloud Cost Optimization and Management</li>
+      </ul>
+      
+      <h3>Cloud Platforms We Specialize In</h3>
+      <ul>
+        <li>Amazon Web Services (AWS) - EC2, S3, RDS, Lambda, EKS, CloudFront</li>
+        <li>Microsoft Azure - Virtual Machines, App Services, Azure DevOps, AKS</li>
+        <li>Google Cloud Platform (GCP) - Compute Engine, Cloud Storage, GKE</li>
+        <li>Multi-Cloud and Hybrid Cloud Strategies</li>
+      </ul>
+      
+      <h3>Technologies and Tools</h3>
+      <ul>
+        <li>Container Technologies: Docker, Kubernetes, OpenShift</li>
+        <li>Infrastructure as Code: Terraform, CloudFormation, Ansible</li>
+        <li>Programming Languages: Python, JavaScript, TypeScript, Go, Java</li>
+        <li>Frontend Technologies: React, Vue.js, Angular, Next.js</li>
+        <li>Backend Technologies: Node.js, Express, Django, Flask</li>
+        <li>Databases: PostgreSQL, MongoDB, Redis, MySQL, DynamoDB</li>
+        <li>Monitoring and Logging: Prometheus, Grafana, ELK Stack, CloudWatch</li>
+        <li>CI/CD Tools: Jenkins, GitLab CI, GitHub Actions, Azure DevOps</li>
+      </ul>
+      
+      <h3>Why Choose CloudGrains</h3>
+      <ul>
+        <li>99.9% Uptime Guarantee with 24/7 Support</li>
+        <li>Expert Team with 100+ Successful Projects</li>
+        <li>10+ Satisfied Enterprise Clients</li>
+        <li>Cost-Effective Cloud Solutions</li>
+        <li>Scalable Architecture Design</li>
+        <li>Security-First Approach</li>
+        <li>Rapid Deployment and Migration Services</li>
+        <li>Ongoing Maintenance and Optimization</li>
+      </ul>
+      
+      <h3>Industries We Serve</h3>
+      <p>CloudGrains provides cloud infrastructure solutions for various industries including:</p>
+      <ul>
+        <li>E-commerce and Retail</li>
+        <li>Financial Services and Fintech</li>
+        <li>Healthcare and Life Sciences</li>
+        <li>Education and EdTech</li>
+        <li>Media and Entertainment</li>
+        <li>Manufacturing and IoT</li>
+        <li>Startups and SMBs</li>
+        <li>Enterprise Organizations</li>
+      </ul>
+      
+      <address>
+        <h3>Contact CloudGrains</h3>
+        <p>Get in touch with our cloud experts to discuss your infrastructure needs:</p>
+        <p>Email: contact@cloudgrains.com</p>
+        <p>Phone: Available on our contact page</p>
+        <p>Location: United States</p>
+        <p>Business Hours: 24/7 Support Available</p>
+      </address>
+    </div>
+    
+    <!-- Main React Application Container -->
+    <div id="root" role="main" itemscope itemtype="https://schema.org/WebApplication">
+      <!-- React app will be rendered here -->
+    </div>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin />
+    
+    <!-- Additional structured data for breadcrumbs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cloudgrains.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://cloudgrains.com/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "About",
+          "item": "https://cloudgrains.com/#about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contact",
+          "item": "https://cloudgrains.com/#contact"
+        }
+      ]
+    }
+    </script>
   </body>
 </html>

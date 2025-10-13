@@ -1,25 +1,72 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "CloudGrains",
+  "name": "CloudGrains - Cloud Infrastructure Solutions & DevOps Services",
+  "description": "Premier cloud infrastructure provider offering AWS, Azure, GCP solutions, DevOps automation, and web development services with 99.9% uptime guarantee.",
+  "categories": ["business", "productivity", "developer"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "theme_color": "#38bdf8",
+  "background_color": "#ffffff",
+  "edge_side_panel": {
+    "preferred_width": 480
+  },
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "purpose": "any"
     },
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
-      "src": "logo512.png",
+      "src": "logo512.png", 
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "screenshots": [
+    {
+      "src": "logo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "description": "View our cloud infrastructure and DevOps services",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact", 
+      "description": "Get in touch with our cloud experts",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
 }

@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# 🌩️ CloudGrains - Premier Cloud Infrastructure Solutions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**CloudGrains** is a leading provider of cloud infrastructure solutions, DevOps automation, and web development services. We specialize in AWS, Azure, and Google Cloud Platform deployments with a 99.9% uptime guarantee.
+
+![CloudGrains Logo](./public/logo512.png)
+
+[![Website](https://img.shields.io/badge/Website-cloudgrains.com-blue)](https://cloudgrains.com)
+[![React](https://img.shields.io/badge/React-18.0+-blue.svg)](https://reactjs.org/)
+[![AWS](https://img.shields.io/badge/AWS-Cloud%20Expert-orange)](https://aws.amazon.com/)
+[![Azure](https://img.shields.io/badge/Azure-Certified-blue)](https://azure.microsoft.com/)
+[![GCP](https://img.shields.io/badge/GCP-Partner-green)](https://cloud.google.com/)
+
+## 🚀 About CloudGrains
+
+CloudGrains transforms businesses through cutting-edge cloud technology and DevOps practices. Our expert team delivers scalable, secure, and cost-effective solutions for enterprises worldwide.
 
 ## Available Scripts
 
