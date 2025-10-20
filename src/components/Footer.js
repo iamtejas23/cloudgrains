@@ -170,9 +170,11 @@ const Footer = () => {
               </p>
             </div>
             <div className="footer-bottom-links">
-              <span>Privacy Policy</span>
-              <span>Terms of Service</span>
-              <span>Cookie Policy</span>
+              <a href="/privacy.html" className="footer-link" rel="nofollow">Privacy Policy</a>
+              <a href="/terms.html" className="footer-link" rel="nofollow">Terms of Service</a>
+              <a href="/cookie-policy.html" className="footer-link" rel="nofollow">Cookie Policy</a>
+              <a href="/press.html" className="footer-link">Press</a>
+              <a href="/link-to-us.html" className="footer-link">Link to Us</a>
             </div>
           </div>
         </motion.div>
