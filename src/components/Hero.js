@@ -64,14 +64,14 @@ const Hero = () => {
       >
         <motion.div className="hero-content" variants={itemVariants}>
           <motion.h1 className="hero-title" variants={itemVariants}>
-            Scalable
-            <span className="highlight"> Cloud & DevOps </span>
-            Solutions
+            CloudGrains
+            <span className="highlight"> Cloud Infrastructure </span>
+            & DevOps Solutions
           </motion.h1>
           
           <motion.p className="hero-subtitle" variants={itemVariants}>
-            Transform your business with cutting-edge cloud infrastructure, 
-            seamless DevOps practices, and innovative development solutions.
+            CloudGrains (Cloud Grains) delivers scalable cloud platforms, seamless DevOps automation,
+            and modern web apps on AWS, Azure and GCP.
           </motion.p>
 
           <motion.div className="hero-stats" variants={itemVariants}>

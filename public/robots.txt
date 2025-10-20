@@ -6,7 +6,6 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
-Disallow: /*.json$
 Disallow: /api/
 
 # Specific rules for major search engines

@@ -27,10 +27,10 @@ const Footer = () => {
   };
 
   const quickLinks = [
-    { name: 'Home', id: 'home' },
-    { name: 'Services', id: 'services' },
-    { name: 'About', id: 'about' },
-    { name: 'Contact', id: 'contact' }
+    { name: 'Home', id: 'home', href: '#home' },
+    { name: 'Services', id: 'services', href: '#services' },
+    { name: 'About', id: 'about', href: '#about' },
+    { name: 'Contact', id: 'contact', href: '#contact' }
   ];
 
   const services = [
@@ -85,7 +85,7 @@ const Footer = () => {
                   key={index}
                   href={social.url}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   className="social-link"
                   style={{ backgroundColor: social.color }}
                   whileHover={{ scale: 1.1, y: -2 }}
@@ -108,12 +108,13 @@ const Footer = () => {
             <ul className="footer-links">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <button 
-                    onClick={() => scrollToSection(link.id)}
+                  <a
+                    href={link.href}
+                    onClick={(e) => { e.preventDefault(); scrollToSection(link.id); }}
                     className="footer-link"
                   >
                     {link.name}
-                  </button>
+                  </a>
                 </li>
               ))}
             </ul>
